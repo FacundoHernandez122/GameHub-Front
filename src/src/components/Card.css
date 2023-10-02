@@ -1,0 +1,28 @@
+
+.card_foot {
+  display: flex;
+  align-items: end;
+  height: 200px;
+  background-color: coral;
+  position: absolute;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .card_containerCard {
+    width: 365px;
+    height: 174px;
+    border: 2px black solid;
+
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .card_containerCard img {
+    width: 365px;
+  }
+}
