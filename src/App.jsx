@@ -2,9 +2,7 @@ import { useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./components/Home";
 import GameData from "./components/GameData";
-import Trailer from "./components/Trailer";
-import GameDataInfoGame from "./components/GameDataInfo-game";
-import Admin from "./components/Admin";
+// import Admin from "./components/Admin";
 import Cart from "./components/Cart";
 import AboutUs from "./components/AboutUs";
 import Login from "./components/Login";
@@ -46,7 +44,7 @@ function App() {
         <Route path="/category/Shooter" element={<CategoryShooter />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signUp" element={<SignUp />} />
-        <Route path="/admin" element={<Admin />} />
+        {/* <Route path="/admin" element={<Admin />} /> */}
         <Route path="/:slug" element={<GameData />}></Route>
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkOut" element={<CheckOut />} />
