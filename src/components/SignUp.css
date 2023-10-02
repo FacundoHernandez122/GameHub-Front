@@ -1,0 +1,26 @@
+.register_back {
+  height: calc(100vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 90%;
+  padding-bottom: 60px;
+}
+.wrapper_sign {
+  margin-top: 100px;
+  position: relative;
+  width: 600px;
+  height: fit-content;
+  background: rgba(23, 22, 22, 0.198);
+  border-radius: 20px;
+  backdrop-filter: blur(30px);
+  border: 1px solid #14213d;
+  padding-left: 4.5em;
+  padding-right: 4.5em;
+  box-shadow: 0px 0px 20px 1px rgb(27, 26, 26);
+}
+
+.signUp_foot {
+  opacity: 50%;
+  scale: 0.9;
+}

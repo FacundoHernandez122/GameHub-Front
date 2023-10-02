@@ -1,0 +1,150 @@
+h3 {
+  color: #ffa42c;
+}
+.profile_title {
+  color: #ffa42c;
+}
+
+.scale_container_profile {
+  scale: 95%;
+}
+
+.profile_mainBox {
+  border-top: 2px solid #14213d;
+  width: 100%;
+}
+
+.image_user img {
+  height: 50px;
+}
+
+.profile_content_game {
+  overflow: auto;
+  height: 450px;
+}
+
+.profile_content_game::-webkit-scrollbar {
+  width: 10px;
+}
+
+.profile_content_game::-webkit-scrollbar-thumb {
+  background-color: #50505042;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.profile_box {
+  padding: 15px;
+  margin-bottom: 25px;
+  margin-top: 27px;
+  border-radius: 5px;
+
+  background: #14213d;
+  background: linear-gradient(
+    56deg,
+    #14213d 2%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(20, 33, 61, 1) 87%
+  );
+  box-shadow: 0px 0px 9px 3px #14213d;
+  -webkit-box-shadow: 0px 0px 3px 1px #14213d;
+  -moz-box-shadow: 0px 0px 3px 5px #14213d;
+}
+
+.profile_box:hover {
+  border: 1px solid #14213d;
+  transition: ease-in 0.5s;
+  box-shadow: 0px 0px 11px 7px #14213d;
+  -webkit-box-shadow: 0px 0px 11px 7px #14213d;
+  -moz-box-shadow: 0px 0px 11px 7px #14213d;
+}
+
+.profile_image {
+  padding: 0px;
+}
+
+.profile_item_title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 20%;
+}
+.profile_info {
+  margin: 5px;
+  background: none;
+  color: white;
+}
+
+.profile_text {
+  margin-top: 5%;
+  margin-left: 5%;
+  font-size: 15px;
+  color: rgb(175, 173, 173);
+}
+.profile_price_value {
+  font-weight: 600;
+}
+.profile_button {
+  color: rgba(228, 228, 228, 0.649);
+  margin-top: 5%;
+}
+.profile_button:hover {
+  color: rgb(246, 52, 52);
+}
+.profile_button:active {
+  position: relative;
+  top: 1px;
+}
+
+.profile_dataCard {
+ width: auto;
+  display: flex;
+  padding: 0 20px;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #14213d;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 20px 1px black;
+}
+.profile_data_title {
+  font-size: 30px;
+}
+.profile_data {
+  font-size: 20px;
+  height: max-content;
+  color: #fff;
+}
+
+.btn_editProfile {
+  width: 15rem;
+  height: 3rem;
+  margin-top: 15px;
+  color: #14213d;
+  background-color: #ff9d00;
+  font-weight: 600;
+}
+.btn_editProfile:hover {
+  border: 1px solid #fca211c3;
+  transition: ease-in 0.5s;
+  transform: scale(1.05);
+  background-color: #ff9d00;
+  color: #444343;
+}
+
+.backModal {
+  backdrop-filter: blur(10px);
+}
+
+.modal-content {
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 20px 1px #14213d;
+  border-radius: 20px;
+  color: #e5e5e5;
+  background: #14213d;
+  background: linear-gradient(
+    56deg,
+    #14213d 2%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(20, 33, 61, 1) 87%
+  );
+}
