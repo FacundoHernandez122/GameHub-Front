@@ -36,11 +36,11 @@ export default function CategoryTerror() {
   };
 
   useEffect(() => {
-    getGamesByCategory(activeCategory); // Llama a la función para obtener juegos por categoría
-  }, [activeCategory]); // Vuelve a cargar cuando cambie la categoría activa
+    getGamesByCategory(activeCategory);
+  }, [activeCategory]);
 
   const handleCategoryClick = (category) => {
-    setActiveCategory(category); // Actualiza la categoría activa al hacer clic en el enlace
+    setActiveCategory(category);
   };
 
   return (

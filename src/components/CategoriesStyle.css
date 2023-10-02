@@ -1,4 +1,4 @@
-/* ----------------Background--------------- */
+
 
 .principalContainer_terror {
   background: rgb(79, 4, 4);
@@ -83,7 +83,7 @@
   );
 }
 
-/* -----------------Gradient Cards---------------- */
+
 
 #cardGradient {
   height: auto;
@@ -96,7 +96,7 @@
   );
 }
 
-/* ----------------------------------------------- */
+
 
 .cardSubContainer {
   display: flex;
@@ -197,9 +197,7 @@
   width: 100%;
 }
 
-/* -----------------Querys---------------- */
 
-/* ------------------------------------------------- */
 
 .wrapperCards {
   display: flex;
@@ -250,7 +248,7 @@
 }
 
 .buy-button {
-  align-self: flex-end; /* Coloca el botón al final del contenedor */
+  align-self: flex-end;
   margin-right: 5px;
   margin-bottom: 10px;
   scale: 0.8;

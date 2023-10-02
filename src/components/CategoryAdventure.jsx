@@ -13,7 +13,7 @@ import slugify from "slugify";
 import LeftBar from "./LeftBar";
 
 export default function CategoryAdventure() {
-  const [adventureCategory, setAdventureCategory] = useState(null); // Cambié el nombre de la variable aquí
+  const [adventureCategory, setAdventureCategory] = useState(null);
   const [activeCategory, setActiveCategory] = useState("All");
   const baseURL = import.meta.env.VITE_API_BASE_URL;
 
