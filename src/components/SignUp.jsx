@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Alert from "react-bootstrap/Alert";
-import "./SignUp.css";
+import "../components/css/SignUp.css";
 
 function SignUp() {
   const navigate = useNavigate();

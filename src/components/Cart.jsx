@@ -1,4 +1,4 @@
-import "./Cart.css";
+import "../components/css/Cart.css";
 import NavigateBar from "./NavigateBar";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
@@ -59,10 +59,7 @@ function Cart() {
                     <hr />
                     <div>Total Amount US$ {totalAmount.toFixed(2)}</div>
                     <Link>
-                      <button
-                        onClick={handleBuyNow}
-                        className="btn cart_priceButton"
-                      >
+                      <button onClick={handleBuyNow} className="btn cart_priceButton">
                         Buy Now
                       </button>
                     </Link>

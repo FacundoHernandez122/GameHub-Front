@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import "./CheckOut.css";
+import "../components/css/CheckOut.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
@@ -87,9 +87,7 @@ const Checkout = () => {
           <div className="row d-flex justify-content-center align-items-center">
             <div className="payment-icons-container ">
               <div
-                className={`payment-method ${
-                  selectedPayment === "visa" ? "selected" : ""
-                }`}
+                className={`payment-method ${selectedPayment === "visa" ? "selected" : ""}`}
                 onClick={() => handlePaymentSelect("visa")}
               >
                 <span
@@ -102,9 +100,7 @@ const Checkout = () => {
               </div>
 
               <div
-                className={`payment-method ${
-                  selectedPayment === "mastercard" ? "selected" : ""
-                }`}
+                className={`payment-method ${selectedPayment === "mastercard" ? "selected" : ""}`}
                 onClick={() => handlePaymentSelect("mastercard")}
               >
                 <span
@@ -113,17 +109,11 @@ const Checkout = () => {
                   }`}
                 ></span>
 
-                <img
-                  src="/img/tarjeta.png"
-                  alt="Mastercard"
-                  className="payment-icon"
-                />
+                <img src="/img/tarjeta.png" alt="Mastercard" className="payment-icon" />
               </div>
 
               <div
-                className={`payment-method  ${
-                  selectedPayment === "paypal" ? "selected" : ""
-                }`}
+                className={`payment-method  ${selectedPayment === "paypal" ? "selected" : ""}`}
                 onClick={() => handlePaymentSelect("paypal")}
               >
                 <span
@@ -132,11 +122,7 @@ const Checkout = () => {
                   }`}
                 ></span>
 
-                <img
-                  src="/img/paypal.png"
-                  alt="PayPal"
-                  className="payment-icon"
-                />
+                <img src="/img/paypal.png" alt="PayPal" className="payment-icon" />
               </div>
             </div>
           </div>
@@ -170,12 +156,7 @@ const Checkout = () => {
                   <div className="form-group">
                     <label htmlFor="cvv">CVV</label>
 
-                    <input
-                      type="text"
-                      id="cvv"
-                      className="form-control"
-                      placeholder="123"
-                    />
+                    <input type="text" id="cvv" className="form-control" placeholder="123" />
                   </div>
 
                   <div className="form-group">
@@ -201,9 +182,7 @@ const Checkout = () => {
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="identityNumber">
-                      Number of identity card
-                    </label>
+                    <label htmlFor="identityNumber">Number of identity card</label>
 
                     <input
                       type="text"
@@ -219,11 +198,7 @@ const Checkout = () => {
 
                   <div className="text-center col-lg-12 col-md-12 col-sm-12 pt-4 pb-4">
                     <Link>
-                      <button
-                        className="btn "
-                        type="submit"
-                        onClick={handleBuy}
-                      >
+                      <button className="btn " type="submit" onClick={handleBuy}>
                         Buy
                       </button>
                     </Link>

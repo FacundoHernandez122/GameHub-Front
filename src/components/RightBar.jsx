@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./RightBar.css";
+import "../components/css/RightBar.css";
 import { useEffect, useState } from "react";
 import Footer from "./Footer";
 
@@ -9,9 +9,7 @@ function RightBar() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY > 100
-        ? setbackToTopButton(true)
-        : setbackToTopButton(false);
+      window.scrollY > 100 ? setbackToTopButton(true) : setbackToTopButton(false);
     });
   }, []);
   const scrollUp = () => {

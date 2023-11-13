@@ -1,4 +1,4 @@
-import "./LimitedEdition.css";
+import "../components/css/LimitedEdition.css";
 import NavigateBar from "./NavigateBar";
 import React, { useState, useEffect } from "react";
 
@@ -27,11 +27,7 @@ function SpecialOffer() {
         <div className="col-lg-8 p-0 ms-3">
           {games[0] && (
             <div className="special_big pb-5">
-              <img
-                src={currentImage}
-                alt="Big Image"
-                className="special_image ms-5 pb-2 pt-3"
-              />
+              <img src={currentImage} alt="Big Image" className="special_image ms-5 pb-2 pt-3" />
             </div>
           )}
         </div>

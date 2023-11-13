@@ -1,5 +1,5 @@
 import React from "react";
-import "./Categories.css";
+import "../components/css/Categories.css";
 import { NavLink } from "react-router-dom";
 
 export default function Categories() {

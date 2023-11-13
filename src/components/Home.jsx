@@ -8,13 +8,12 @@ import LeftBar from "./LeftBar";
 import Offers from "./Offers";
 import { useState } from "react";
 import Categories from "./Categories";
-import "./Home.css";
-import "./Header.css";
-import "./LeftBar.css";
-import "./Footer.css";
-import "./Carousel.css";
-import "./Offers.css";
-import "./NavigateBar.css";
+import "../components/css/Home.css";
+import "../components/css/Header.css";
+import "../components/css/LeftBar.css";
+import "../components/css/Footer.css";
+import "../components/css/Offers.css";
+import "../components/css/NavigateBar.css";
 import SearchGame from "./SearchGame";
 
 function Home() {
@@ -67,10 +66,7 @@ function Home() {
               </div>
 
               <div className="home_containerCenter container general mt-0  p-0 d-flex  m-auto">
-                <div
-                  id="limited_editions"
-                  className="home_titlesContainer me-4 pt-5 mb-3 "
-                >
+                <div id="limited_editions" className="home_titlesContainer me-4 pt-5 mb-3 ">
                   <h2 className="ms-5">A bit of everything</h2>
                 </div>
 

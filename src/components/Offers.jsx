@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import "./SearchGame.css";
+import "../components/css/SearchGame.css";
 import slugify from "slugify";
 import { addItem } from "../redux/cartSlice";
 import ButtonAddToCart from "./ButtonAddToCart";
 import CardGame from "./CardGame";
-import "./CardGame.css";
+import "../components/css/CardGame.css";
 
 function Offers({ games }) {
   const dispatch = useDispatch();
@@ -14,15 +14,11 @@ function Offers({ games }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [shuffledGames, setShuffledGames] = useState([]);
 
-  // Función para mezclar aleatoriamente los juegos
   function shuffleArray(array) {
     const shuffledArray = [...array];
     for (let i = shuffledArray.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [shuffledArray[i], shuffledArray[j]] = [
-        shuffledArray[j],
-        shuffledArray[i],
-      ];
+      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
     }
     return shuffledArray;
   }
@@ -33,9 +29,7 @@ function Offers({ games }) {
   }, [games]);
 
   const filteredGames = shuffledGames
-    .filter((game) =>
-      game.name.toLowerCase().includes(searchTerm.toLowerCase())
-    )
+    .filter((game) => game.name.toLowerCase().includes(searchTerm.toLowerCase()))
     .slice(0, 5);
 
   const handleSearchChange = (e) => {
@@ -52,11 +46,7 @@ function Offers({ games }) {
         <div className="search_scrollContent ps-5 pe-5  vh-100">
           <div className="">
             {filteredGames.map((game) => (
-              <CardGame
-                key={game._id}
-                game={game}
-                onAddToCart={() => handleAddToCart(game)}
-              />
+              <CardGame key={game._id} game={game} onAddToCart={() => handleAddToCart(game)} />
             ))}
           </div>
         </div>

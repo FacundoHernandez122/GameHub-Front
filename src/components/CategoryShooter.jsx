@@ -5,7 +5,7 @@ import NavigateBar from "./NavigateBar";
 import Categories from "./Categories";
 import Footer from "./Footer";
 import RightBar from "./RightBar";
-import "./CategoriesStyle.css";
+import "../components/css/CategoriesStyle.css";
 import { useDispatch } from "react-redux";
 import { addItem } from "../redux/cartSlice";
 import ButtonAddToCart from "./ButtonAddToCart";

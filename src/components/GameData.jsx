@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./GameData.css";
+import "../components/css/GameData.css";
 import { Link, useParams } from "react-router-dom";
-import "./NavigateBar.css";
+import "../components/css/NavigateBar.css";
 import NavigateBar from "./NavigateBar";
 import axios from "axios";
 import ButtonAddToCart from "./ButtonAddToCart";
@@ -54,11 +54,7 @@ function GameData(game) {
         >
           <div className="gameid_subcontainer col-6">
             <div className="gameid_leftTop d-flex align-items-end justify-content-end ">
-              <img
-                id="cardGradient"
-                src={`${baseURL}/img/${showGame.img}`}
-                alt=""
-              />
+              <img id="cardGradient" src={`${baseURL}/img/${showGame.img}`} alt="" />
             </div>
             <div className="gameid_leftBottom d-flex ">
               <div className="gameid_cardPrice  d-flex justify-content-center">

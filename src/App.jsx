@@ -44,7 +44,6 @@ function App() {
         <Route path="/category/Shooter" element={<CategoryShooter />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signUp" element={<SignUp />} />
-
         <Route path="/:slug" element={<GameData />}></Route>
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkOut" element={<CheckOut />} />

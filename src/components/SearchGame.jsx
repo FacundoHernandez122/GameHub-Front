@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import "./SearchGame.css";
+import "../components/css/SearchGame.css";
 import slugify from "slugify";
 import { addItem } from "../redux/cartSlice";
 import ButtonAddToCart from "./ButtonAddToCart";
@@ -28,16 +28,13 @@ function SearchGame({ games }) {
   };
 
   const filteredGames = games.filter((game) =>
-    game.name.toLowerCase().includes(searchTerm.toLowerCase())
+    game.name.toLowerCase().includes(searchTerm.toLowerCase()),
   );
   return (
     <div id="search_container" className=" container b  p-0 m-0 pt-3 pb-4 ">
       <div>
         <div className="height_wrapper">
-          <div
-            id="search-input"
-            className="search-input d-flex ps-3 pb-4 text-start"
-          >
+          <div id="search-input" className="search-input d-flex ps-3 pb-4 text-start">
             <input
               type="text"
               placeholder="Search your game..."

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NavigateBar from "./NavigateBar";
-import "./GameData.css";
+import "../components/css/GameData.css";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";

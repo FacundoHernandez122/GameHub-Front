@@ -1,5 +1,5 @@
 import React from "react";
-import "./Card.css";
+import "../components/css/Card.css";
 import { NavLink } from "react-router-dom";
 import ButtonAddToCart from "./ButtonAddToCart";
 

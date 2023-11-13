@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import "./SearchGame.css";
+import "../components/css/SearchGame.css";
 import slugify from "slugify";
 import { addItem } from "../redux/cartSlice";
 import ButtonAddToCart from "./ButtonAddToCart";

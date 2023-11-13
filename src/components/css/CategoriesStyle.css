@@ -1,0 +1,360 @@
+
+
+.principalContainer_terror {
+  background: rgb(79, 4, 4);
+  background: linear-gradient(
+    43deg,
+    rgba(79, 4, 4, 1) 0%,
+    rgba(64, 2, 2, 1) 13%,
+    rgba(24, 0, 0, 1) 37%,
+    rgba(89, 1, 1, 1) 81%,
+    rgba(170, 0, 0, 1) 100%
+  );
+}
+
+.principalContainer_adventure {
+  background: rgb(53, 4, 79);
+  background: linear-gradient(
+    43deg,
+    rgba(53, 4, 79, 1) 0%,
+    rgba(47, 2, 64, 1) 13%,
+    rgba(15, 0, 24, 1) 37%,
+    rgba(62, 1, 89, 1) 81%,
+    rgba(140, 0, 170, 1) 100%
+  );
+}
+
+.principalContainer_action {
+  background: rgb(38, 42, 103);
+  background: linear-gradient(
+    30deg,
+    rgba(38, 42, 103, 1) 0%,
+    rgba(21, 24, 58, 1) 23%,
+    rgba(17, 17, 82, 1) 66%,
+    rgba(90, 88, 189, 1) 100%
+  );
+}
+
+.principalContainer_shooter {
+  background: rgb(4, 79, 79);
+  background: linear-gradient(
+    43deg,
+    rgba(4, 79, 79, 1) 0%,
+    rgba(2, 63, 64, 1) 13%,
+    rgba(0, 24, 23, 1) 37%,
+    rgba(1, 89, 87, 1) 81%,
+    rgba(0, 170, 163, 1) 100%
+  );
+}
+
+.principalContainer_sport {
+  background: rgb(4, 79, 24);
+  background: linear-gradient(
+    43deg,
+    rgba(4, 79, 24, 1) 0%,
+    rgba(2, 64, 22, 1) 13%,
+    rgba(0, 24, 4, 1) 37%,
+    rgba(1, 89, 25, 1) 81%,
+    rgba(0, 170, 43, 1) 100%
+  );
+}
+
+.principalContainer_rol {
+  background: rgb(79, 46, 4);
+  background: linear-gradient(
+    43deg,
+    rgba(79, 46, 4, 1) 0%,
+    rgba(64, 32, 2, 1) 13%,
+    rgba(24, 11, 0, 1) 37%,
+    rgba(89, 38, 1, 1) 81%,
+    rgba(170, 60, 0, 1) 100%
+  );
+}
+
+.principalContainer_strategy {
+  background: rgb(79, 76, 4);
+  background: linear-gradient(
+    43deg,
+    rgba(79, 76, 4, 1) 0%,
+    rgba(64, 62, 2, 1) 13%,
+    rgba(24, 23, 0, 1) 37%,
+    rgba(89, 83, 1, 1) 81%,
+    rgba(170, 157, 0, 1) 100%
+  );
+}
+
+
+
+#cardGradient {
+  height: auto;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 35%,
+    rgba(0, 0, 0, 0.877) 100%
+  );
+}
+
+
+
+.cardSubContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cardContainer {
+  min-height: 100vh;
+  min-width: 100vw;
+
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #fca311;
+}
+
+.cardContainer h1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 5rem;
+  border-bottom: 1px #fca311 solid;
+}
+
+.component_cartButton:hover {
+  scale: 1.1;
+}
+
+.cart-icon {
+  border-radius: 10px;
+}
+
+.categoryContainer {
+  display: flex;
+}
+
+.cart-icon:hover {
+  color: #14213d;
+}
+
+.component_cartButton p {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.5rem;
+  color: #14213d;
+
+  font-family: "Yanone Kaffeesatz", sans-serif;
+
+  text-decoration: none;
+  width: 120px;
+  height: 40px;
+
+  font-weight: bold;
+  background-color: #fca311;
+}
+
+.component_cartButton p:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 0%;
+  background: #fca311;
+  height: 100%;
+  z-index: -1;
+  transition: width 0.3s ease-in-out;
+  transform: skew(0deg);
+  transform-origin: right;
+  font-size: 1.5rem;
+}
+
+.categorie_button p:hover:after {
+  width: 150%;
+  left: -10px;
+  transform-origin: left;
+}
+
+.categorie_button p:hover {
+  color: #e5e5e5;
+  transition: all 0.5s ease;
+  scale: 1.05;
+}
+
+.categorie_button p:nth-of-type(1) {
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.cart-btn {
+  width: 100%;
+}
+
+.component_cartButton {
+  width: 100%;
+}
+
+
+
+.wrapperCards {
+  display: flex;
+  justify-content: center;
+  border-radius: 7px;
+}
+
+.wrapperImg {
+  position: relative;
+  border-radius: 7px;
+  box-shadow: -2px 48px 30px -27px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 48px 30px -27px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 48px 30px -27px rgba(0, 0, 0, 0.75);
+}
+
+.wrapperImg:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0;
+  color: white;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.price {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: absolute;
+  bottom: 20px;
+  color: #e5e5e5;
+  margin: 0;
+  margin-left: 20px;
+  font-size: 1.2rem;
+}
+
+.wrapperImg img {
+  width: 420px;
+  padding: 0;
+}
+
+.buy-button {
+  align-self: flex-end;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  scale: 0.8;
+  background-color: #fca311;
+  border-radius: 15px;
+}
+
+.wrapperImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  z-index: 1;
+}
+
+.wrapperImg span {
+  border-radius: 15px;
+}
+
+.wrapperImg img {
+  border-radius: 9px;
+  border: 1px solid rgb(41, 41, 41);
+}
+
+@media (max-width: 1400px) {
+  .wrapperImg img {
+    width: 360px;
+    padding: 0;
+  }
+
+  .textTitle {
+    text-align: start;
+  }
+}
+
+@media (max-width: 1200px) {
+  .textTitle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 990px) {
+  #categoryTop {
+    display: none;
+  }
+}
+
+@media (min-width: 990px) {
+  #categoryBottom {
+    z-index: 100;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .textTitle {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .containerWrapperCard {
+    container: none;
+  }
+  .wrapperImg img {
+    width: 400px;
+    padding: 0;
+  }
+  .wrapperSpan span {
+    width: 400px;
+    height: 100px;
+  }
+  .wrapperCards {
+    padding: 0;
+    margin: 0;
+  }
+
+  .textTitle {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 391px) {
+  .containerWrapperCard {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .cardSubContainer {
+    width: auto;
+  }
+
+  .wrapperImg img {
+    width: 300px;
+  }
+}

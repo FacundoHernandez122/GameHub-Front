@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState, React } from "react";
 import axios from "axios";
 
-import "./CartItem.css";
+import "../components/css/CartItem.css";
 
 function OrderItem() {
   const dispatch = useDispatch();

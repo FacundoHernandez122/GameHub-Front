@@ -9,9 +9,7 @@ import NavigateBar from "./NavigateBar";
 import Footer from "./Footer";
 import Login from "./Login";
 
-import "./NavigateBar.css";
-
-import "./UserProfile.css";
+import "../components/css/UserProfile.css";
 
 function UserProfile() {
   const [show, setShow] = useState(false);
@@ -59,7 +57,7 @@ function UserProfile() {
       const response = await axios.patch(
         `${baseURL}/user/${params.username}/edit`,
 
-        updatedUserData
+        updatedUserData,
       );
 
       if (response.status === 200) {
@@ -106,9 +104,7 @@ function UserProfile() {
                                 className="form-control"
                                 value={newFirstname}
                                 placeholder={account.firstname}
-                                onChange={(e) =>
-                                  setNewFirstname(e.target.value)
-                                }
+                                onChange={(e) => setNewFirstname(e.target.value)}
                               />
                             </div>
                             <div className="form-group mb-3">
@@ -226,11 +222,7 @@ function UserProfile() {
                       <p>Address: {account.address}</p>
                       <p>Phone: {account.phone}</p>
                       <div className="d-flex justify-content-center">
-                        <Button
-                          className="btn_editProfile"
-                          variant="primary"
-                          onClick={handleShow}
-                        >
+                        <Button className="btn_editProfile" variant="primary" onClick={handleShow}>
                           Edit Profile
                         </Button>
                       </div>

@@ -5,13 +5,13 @@ import NavigateBar from "./NavigateBar";
 import Categories from "./Categories";
 import Footer from "./Footer";
 import RightBar from "./RightBar";
-import "./CategoriesStyle.css";
+import "../components/css/CategoriesStyle.css";
 import { useDispatch } from "react-redux";
 import { addItem } from "../redux/cartSlice";
 import ButtonAddToCart from "./ButtonAddToCart";
 import slugify from "slugify";
 import LeftBar from "./LeftBar";
-import "./NavigateBar.css";
+import "../components/css/NavigateBar.css";
 
 export default function CategoryAction({ game }) {
   const [actionCategory, setActionCategory] = useState(null);

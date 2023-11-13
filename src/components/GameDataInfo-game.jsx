@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "./Admin.css";
+import "../components/css/Admin.css";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
-import NavigateBar from "./NavigateBar";
+import Footer from "../components/css/Footer";
+import NavigateBar from "../components/css/NavigateBar";
 
 export class Admin extends Component {
   render() {
@@ -19,70 +19,47 @@ export class Admin extends Component {
 
               <div className="content_right col-lg-4 col-md-12 m-auto d-block">
                 <div className="container_links d-flex mt-1 ms-5 me-5 text-center">
-                  <Link
-                    id="link"
-                    className=" text-decoration-none"
-                    to="/gameid/trailer"
-                  >
+                  <Link id="link" className=" text-decoration-none" to="/gameid/trailer">
                     Trailer
                   </Link>
-                  <Link
-                    id="link"
-                    className="text-decoration-none"
-                    to="/gameid/info-game"
-                  >
+                  <Link id="link" className="text-decoration-none" to="/gameid/info-game">
                     Info Game
                   </Link>
-                  <Link
-                    id="link"
-                    className=" selected text-decoration-none"
-                    to="/gameid"
-                  >
+                  <Link id="link" className=" selected text-decoration-none" to="/gameid">
                     Description
                   </Link>
                 </div>
-                <h3 className="description text-center pe-5 mt-3 ps-5">
-                  Description
-                </h3>
+                <h3 className="description text-center pe-5 mt-3 ps-5">Description</h3>
                 <div className="content_game mt-4 pe-4 ms-5">
                   <p className="paragraph_game   text-white">
-                    Two hundred years have passed since the events of The Elder
-                    Scrolls IV: Oblivion, and it is now 4E 201. The High King of
-                    Skyrim has been killed, and the threat of Civil War looms
-                    over the land of Skyrim; One side wishes to secede from the
-                    weakened Third Empire, while the other wishes to remain a
-                    part of it. <br />
+                    Two hundred years have passed since the events of The Elder Scrolls IV:
+                    Oblivion, and it is now 4E 201. The High King of Skyrim has been killed, and the
+                    threat of Civil War looms over the land of Skyrim; One side wishes to secede
+                    from the weakened Third Empire, while the other wishes to remain a part of it.{" "}
                     <br />
-                    To make matters worse, this schism is the final event in a
-                    prophecy foretold by the Elder Scrolls that will lead to the
-                    return of the dragons under Alduin, the Nordic god of
-                    destruction. The player starts the game on a cart heading
-                    for the chopping block after being caught with the
-                    Stormcloaks in an ambush by the Imperial Legion. As the
-                    player lays their head on the chopping block, the dragon
+                    <br />
+                    To make matters worse, this schism is the final event in a prophecy foretold by
+                    the Elder Scrolls that will lead to the return of the dragons under Alduin, the
+                    Nordic god of destruction. The player starts the game on a cart heading for the
+                    chopping block after being caught with the Stormcloaks in an ambush by the
+                    Imperial Legion. As the player lays their head on the chopping block, the dragon
                     Alduin attacks. <br />
-                    <br /> In the midst of the chaos, Hadvar, several
-                    Stormcloaks, along with their leader and fellow prisoner,
-                    Ulfric Stormcloak, assist in the player's escape. The player
-                    may choose between the assistance of Ralof, the Stormcloak
-                    who arrived with Ulfric, or Hadvar, the Imperial soldier
-                    tasked with reading off the names of the prisoners being
-                    sent to their execution. After assisting and gaining the
-                    favor of Jarl Balgruuf the Greater, The player later learns
-                    that they are Dovahkiin, or Dragonborn, a person charged
-                    with the duty of defeating Alduin and the dragons.
+                    <br /> In the midst of the chaos, Hadvar, several Stormcloaks, along with their
+                    leader and fellow prisoner, Ulfric Stormcloak, assist in the player's escape.
+                    The player may choose between the assistance of Ralof, the Stormcloak who
+                    arrived with Ulfric, or Hadvar, the Imperial soldier tasked with reading off the
+                    names of the prisoners being sent to their execution. After assisting and
+                    gaining the favor of Jarl Balgruuf the Greater, The player later learns that
+                    they are Dovahkiin, or Dragonborn, a person charged with the duty of defeating
+                    Alduin and the dragons.
                     <br />
                     <br />
-                    Eventually, the player meets Delphine, and Esbern, two of
-                    the last remaining Blades, and becomes the pupil of the
-                    esteemed Greybeards of High Hrothgar.
+                    Eventually, the player meets Delphine, and Esbern, two of the last remaining
+                    Blades, and becomes the pupil of the esteemed Greybeards of High Hrothgar.
                   </p>
                 </div>
                 <div className="d-flex m-auto justify-content-center ">
-                  <div
-                    data-tooltip=""
-                    className="button d-flex justify-content-center"
-                  >
+                  <div data-tooltip="" className="button d-flex justify-content-center">
                     <div className="button-wrapper">
                       <div className="text text_button">U$S 50.00</div>
                       <span className="icon">
